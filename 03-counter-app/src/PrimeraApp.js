@@ -1,9 +1,11 @@
 import React from 'react';
 
 const PrimeraApp = () => {
+  const saludo = 'Hola mundo';
+
   return (
     <>
-      <h1>Hola mundo</h1>
+      <h1> {saludo} </h1>
       <p>Mi primera app</p>
     </>
   );
