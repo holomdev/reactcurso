@@ -1,8 +1,6 @@
-import React from 'react';
+import React from "react";
 
-const PrimeraApp = () => {
-  const saludo = 'Hola mundo';
-
+const PrimeraApp = ({ saludo = "No saludo" }) => {
   return (
     <>
       <h1> {saludo} </h1>
