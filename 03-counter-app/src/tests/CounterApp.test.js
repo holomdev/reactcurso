@@ -30,4 +30,11 @@ describe('Pruebas en <CounterApp />', () => {
     const valorCounter = wrapper.find('h2').text().trim();
     expect(valorCounter).toBe('9');
   });
+
+  test('Debe de resetear con el boton Reset', () => {
+    const wrapper = shallow(<CounterApp value={100} />);
+    wrapper.find('button').at(1).simulate('click');
+    const valorCounter = wrapper.find('h2').text().trim();
+    expect(valorCounter).toBe('100');
+  });
 });
